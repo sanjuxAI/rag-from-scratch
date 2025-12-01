@@ -105,6 +105,17 @@ pip install faiss-gpu
 ```
 
 ---
+# Configuration
+
+Initialize the RAG system:
+```python
+rag = RAG(
+    llm_path="your_llm_directory_or_hf_model",
+    embedding_model="sentence-transformers/all-mpnet-base-v2",
+    ui_callback=ui_callback  # optional
+)
+```
+---
 
 # Usage
 
@@ -126,7 +137,6 @@ python main.py
 ```
 rag-engine/
 │
-├── rag_inference.py
 ├── main.py
 ├── requirements.txt
 └── README.md
